@@ -14,8 +14,8 @@ public class SnowFlakeDataFrame
 		SparkSession spark = SparkSession
 	    	      .builder()
 	    	      .appName("SnowFlakeDataFrame")
-	    	      .config("spark.master", "local")//change this line or override it from spark-submit. This work fines on AWS EMR clusters as well as Spark Dev environment on Eclipse
-	    	      .getOrCreate();
+	    	      .config("spark.master", "local")//change this line or override it from spark-submit. 
+	    	      .getOrCreate();//This work fines on AWS EMR clusters as well as Spark Dev environment on Eclipse
 	    		   		
 		//First you need to create the properties for Snowflake configuration 
 		Properties connectionProperties = new Properties();
